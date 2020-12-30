@@ -1,3 +1,4 @@
+//Atualizado
 package entidades;
 
 public class Empregado {
