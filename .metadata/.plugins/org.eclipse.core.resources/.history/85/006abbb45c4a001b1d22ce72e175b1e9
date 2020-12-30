@@ -1,0 +1,26 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.Produto;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		List<Produto> list = new ArrayList<>();
+		
+		list.add(new Produto("TV", 900.0));
+		list.add(new Produto("notebook", 1200.0));
+		list.add(new Produto("tablet", 450.0));
+		
+		/*
+		 * Se o criterio de comparacao mudar, precisaria alterar na classe Product, para manutencao
+		 * eh indesejado, dessa forma, foi criado uma classe por fora chamada de MyComparator
+		 * de forma que quando mudar o criterio de comparacao, jah altera diretamente na classe
+		 */
+		list.sort(new MyComparator());
+
+	}
+
+}
