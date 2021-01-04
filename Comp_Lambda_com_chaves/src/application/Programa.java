@@ -28,6 +28,8 @@ public class Programa {
 		};*/
 		/*
 		 * A expressao LAMBDA eh uma abreviacao da classe anonima que estah comentada acima
+		 * 
+		 * A expressao LAMBDA eh conhecida como uma funcao anonima de primeira classe
 		 */
 		Comparator<Produto> comp = (p1, p2) -> {
 			return p1.getNome().toUpperCase().compareTo(p2.getNome().toUpperCase());
