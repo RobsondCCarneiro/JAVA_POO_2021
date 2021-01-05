@@ -5,15 +5,15 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+//import java.text.SimpleDateFormat;
+//import java.text.ParseException;
 
 import db.DB;
 
 public class Program {
 
 	public static void main(String[] args){
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		//SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		Connection conn = null;
 		PreparedStatement st = null;
 		try {
@@ -73,11 +73,11 @@ public class Program {
 			e.printStackTrace();
 		}
 		
-		//Exceção para quando houver erro no formato da Data
-		catch (ParseException e) {
+		/* excecao para a data que nao eh mais usada
+		catch(ParseException e) {
 			e.printStackTrace();
 		}
-		
+		*/
 		finally {
 			DB.closeStatement(st);
 			DB.closeConnection();
