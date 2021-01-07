@@ -1,3 +1,4 @@
+//Recuperando dados do MySQL para o JAVA
 package application;
 
 import java.sql.Connection;
