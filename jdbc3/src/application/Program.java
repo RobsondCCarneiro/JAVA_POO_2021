@@ -1,4 +1,4 @@
-//Atualizando dados do MySQL para o JAVA
+//Inserindo dados no MySQL pelo JAVA
 package application;
 
 import java.sql.Connection;
