@@ -19,7 +19,7 @@ public class Program {
 		try {
 			conn = DB.getConnection();
 			
-			/*
+			/* EXEMPLO 1
 			 * A ? eh um placeholder, um lugar que depois coloca o valor.
 			 * O PreparedStatement permite montar a consulta SQL para deixar
 			 * os parametros para colocar depois.
@@ -44,7 +44,7 @@ public class Program {
 			st.setInt(5, 4);
 			*/
 			
-			/*
+			/* EXEMPLO 2
 			 * Fazendo outro exemplo, inserindo multiplos elementos,
 			 * nesse caso insere apenas os nomes do departamento
 			 */
